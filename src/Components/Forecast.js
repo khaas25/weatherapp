@@ -89,10 +89,12 @@ export default function Forecast() {
             },
             (error) => {
               alert("location service denied");
+              setError(true);
             }
           );
         } else {
           alert("Location Services not found!");
+          setError(true);
         }
       }
     }
