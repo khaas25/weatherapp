@@ -55,7 +55,7 @@ export default function Forecast() {
           navigator.geolocation.getCurrentPosition(
             async (pos) => {
               var response = await fetch(
-                `http://api.openweathermap.org/data/2.5/weather?lat=${pos.coords.latitude}&lon=${pos.coords.longitude}&units=metric&id=524901&appid=ca8c2c7970a09dc296d9b3cfc4d06940`
+                `http://api.openweathermap.org/data/2.5/weather?lat=${pos.coords.latitude}&lon=${pos.coords.longitude}&units=metric&id=524901&appid=bd5e378503939ddaee76f12ad7a97608`
               );
               console.log(response);
               if (response.status === 200) {
